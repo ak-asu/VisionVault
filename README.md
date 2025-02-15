@@ -22,3 +22,53 @@ VisionVault is an advanced computer vision application that automatically blurs 
 - **Deployment**: Cloud (AWS, Azure) or Edge Devices  
 
 ## 📂 Project Structure  
+
+
+
+
+## Requirements
+Ensure you have the following dependencies installed:
+- OpenCV (`cv2`)
+- NumPy (`numpy`)
+- RetinaFace (`retinaface`)
+
+You can install them using:
+```sh
+pip install opencv-python numpy retinaface
+```
+
+## Usage
+1. Place your video file in the working directory.
+2. Ensure you have an encryption key file (`encryption_key.npy`), or modify the script accordingly.
+3. Run the script with:
+   ```sh
+   python process_video.py
+   ```
+
+## Code Breakdown
+- **Loading Encryption Key**: The script attempts to load an encryption key from a `.npy` file.
+- **Reading the Video**: It opens the given video file and extracts frame properties such as width, height, and frames per second (FPS).
+- **Face Detection**: Using RetinaFace, faces in each frame are detected, and bounding boxes and landmarks are drawn.
+- **Saving the Processed Video**: The annotated frames are written to a new video file named `processed_video.mp4`.
+
+## Output
+The processed video with face annotations is saved as `processed_video.mp4` in the working directory.
+
+## Example
+To run the script on a sample video:
+```sh
+python process_video.py 855565-hd_1920_1080_24fps.mp4 encryption_key.npy
+```
+
+## Notes
+- The encryption key functionality is currently a placeholder and does not encrypt/decrypt the video.
+- RetinaFace detects faces in RGB format, so frames are converted before processing.
+- The script assumes valid input files; ensure the paths are correct.
+
+## License
+This project is open-source and available for modification and improvement.
+
+## Custom Dataset
+[https://drive.google.com/drive/folders/1wfgyXzWDGkPZoZpFUNPdrNgyCPUq9KHE](Custom Dataset)
+
+
