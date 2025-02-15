@@ -37,7 +37,7 @@ VisionVault is an advanced computer vision application that automatically blurs 
 
 ## 📂 Project Structure  
 
-Face-Detection-Project/
+VisionVault/
 │── data/                   # Directory to store input videos and encryption key
 │   ├── 855565-hd_1920_1080_24fps.mp4
 │   ├── encryption_key.npy
