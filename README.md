@@ -1,4 +1,4 @@
-# VisionVault – AI-Powered Face Blurring with Cryptographic Access  
+# Vision Vault – AI-Powered Face Blurring with Cryptographic Access  
 
 
 ## 📌 Overview  
@@ -39,7 +39,7 @@ VisionVault/
 │      ├── encryption_key.npy             
 │── output/             
 │      ├── processed_video.mp4             
-├── process_video.py             
+│── process_video.py             
 │── requirements.txt             
 │── README.md             
 
