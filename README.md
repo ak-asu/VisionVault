@@ -7,18 +7,15 @@ VisionVault is an advanced computer vision application that automatically blurs 
 
 ## 🔥 Key Features  
 ✅ **Real-Time Face Blurring** – AI-powered face detection for instant, seamless blurring.  
-✅ **Adjustable Blur Intensity** – Users can modify the blur level based on preference.  
-✅ **Selective & Context-Aware Blurring** – Choose specific faces or apply smart scene-based blurring.  
-✅ **Hierarchical Access Control** – Role-based permissions allow different access levels (e.g., managers vs. public users).  
+✅ **Adjustable Blur Intensity** – Users can modify the blur level based on key seed.   
 ✅ **Cryptographic Blurring & Reversible Encryption** – Secure facial encryption, allowing only authorized users to decrypt and view unblurred faces.  
 ✅ **Crowd Density Detection** – Automatically adjusts blurring based on the number of faces detected.  
-✅ **Scalability & Integration** – Cloud-based or edge-computing deployment with API support for third-party applications.  
 
 
 ## 🛠️ Tech Stack  
 - **Programming Language**: Python  
-- **AI/ML Models**: Convolutional Neural Networks (CNNs) for face detection  
-- **Computer Vision**: OpenCV, MediaPipe  
+- **AI/ML Models**: Retinal-Face for face detection  
+- **Computer Vision**: OpenCV  
 - **Cryptography**: AES-based reversible blurring  
 - **Frameworks**: PyTorch  
 
@@ -38,19 +35,16 @@ VisionVault is an advanced computer vision application that automatically blurs 
 ## 📂 Project Structure  
 
 VisionVault/
-│── data/                   # Directory to store input videos and encryption key
-│   ├── 855565-hd_1920_1080_24fps.mp4
+│── data/                  
+│   ├── sample.mp4
 │   ├── encryption_key.npy
 │
-│── output/                 # Directory to store processed videos
+│── output/             
 │   ├── processed_video.mp4
 │
-│── src/                    # Source code directory
-│   ├── process_video.py    # Main script for face detection and video processing
-│
-│── requirements.txt        # List of dependencies
-│── README.md               # Project documentation
-│── .gitignore              # Files to ignore in version control
+├── process_video.py   
+│── requirements.txt     
+│── README.md         
 
 
 ## Requirements
@@ -84,23 +78,8 @@ pip install opencv-python numpy retinaface
 ## Output
 The processed video with face annotations is saved as `processed_video.mp4` in the working directory.
 
-
-## Example
-To run the script on a sample video:
-```sh
-python process_video.py 855565-hd_1920_1080_24fps.mp4 encryption_key.npy
-```
-
-
-## Notes
-- The encryption key functionality is currently a placeholder and does not encrypt/decrypt the video.
-- RetinaFace detects faces in RGB format, so frames are converted before processing.
-- The script assumes valid input files; ensure the paths are correct.
-
-
 ## License
 This project is open-source and available for modification and improvement.
-
 
 ## Custom Dataset
 https://drive.google.com/drive/folders/1wfgyXzWDGkPZoZpFUNPdrNgyCPUq9KHE
