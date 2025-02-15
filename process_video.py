@@ -25,7 +25,7 @@ def process_video(video_path, encryption_key_path, decrypt=False):
     fps = video_capture.get(cv2.CAP_PROP_FPS)
 
     # Prepare the output video writer
-    output_path = "processed_video.mp4"
+    output_path = "./output/processed_video.mp4"
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
 
@@ -75,8 +75,8 @@ def process_video(video_path, encryption_key_path, decrypt=False):
     print(f"Processed video saved to {output_path}")
 
 # Example usage
-video_path = "855565-hd_1920_1080_24fps.mp4"  # Path to your video file
-encryption_key_path = "encryption_key.npy"  # Path to your encryption key (if applicable)
+video_path = "./data/sample.mp4"  # Path to your video file
+encryption_key_path = "./data/encryption_key.npy"  # Path to your encryption key (if applicable)
 
 # Call the process_video function
 process_video(video_path, encryption_key_path, decrypt=False)  # Set decrypt=True for unblurring
