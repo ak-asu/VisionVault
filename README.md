@@ -32,19 +32,16 @@ VisionVault is an advanced computer vision application that automatically blurs 
 - 📱 **Mobile Support** – Expand usability with mobile apps for real-time video processing.
     
 
-## 📂 Project Structure  
-
-VisionVault/
+## 📂 Project Structure
+VisionVault/             
 │── data/                  
-│   ├── sample.mp4
-│   ├── encryption_key.npy
-│
+│      ├── sample.mp4             
+│      ├── encryption_key.npy             
 │── output/             
-│   ├── processed_video.mp4
-│
-├── process_video.py   
-│── requirements.txt     
-│── README.md         
+│      ├── processed_video.mp4             
+├── process_video.py             
+│── requirements.txt             
+│── README.md             
 
 
 ## Requirements
