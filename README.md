@@ -5,6 +5,12 @@
 VisionVault is an advanced computer vision application that automatically blurs faces in videos to help individuals with scopophobia while allowing authorized users to unblur them using a secure cryptographic key. This system ensures privacy, security, and controlled access to sensitive visual content, making it ideal for personal safety, surveillance, and content moderation.  
 
 
+## Output
+The processed video with face annotations is saved as `processed_video.mp4` in the working directory.
+
+![VisionVault Demo](output/demo.gif)
+
+
 ## 🔥 Key Features  
 ✅ **Real-Time Face Blurring** – AI-powered face detection for instant, seamless blurring.  
 ✅ **Adjustable Blur Intensity** – Users can modify the blur level based on key seed.   
@@ -71,9 +77,6 @@ pip install opencv-python numpy retinaface
 - **Face Detection**: Using RetinaFace, faces in each frame are detected, and bounding boxes and landmarks are drawn.
 - **Saving the Processed Video**: The annotated frames are written to a new video file named `processed_video.mp4`.
 
-
-## Output
-The processed video with face annotations is saved as `processed_video.mp4` in the working directory.
 
 ## License
 This project is open-source and available for modification and improvement.
